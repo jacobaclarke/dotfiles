@@ -1,0 +1,15 @@
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'jalvesaq/Nvim-R'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ludovicchabant/vim-gutentags'
+
+
+call plug#end()
+nnoremap <silent><nowait> <space>t  :<C-u>CocList symbols<cr>
+nnoremap <silent><nowait> <space>b  :<C-u>CocList buffers<cr>
+nnoremap <silent><nowait> <space>l  :<C-u>CocList<cr>
+
+inoremap <expr> <tab> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
