@@ -1,0 +1,3 @@
+# Machine-local dependencies and Pi project configuration/state
+node_modules/
+.pi/
